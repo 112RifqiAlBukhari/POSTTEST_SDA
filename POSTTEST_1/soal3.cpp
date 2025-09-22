@@ -9,7 +9,7 @@ struct Mahasiswa {
 };
 
 int main() {
-    const int N = 4; // jumlah mahasiswa
+    const int N = 4; 
     Mahasiswa mhs[N];
 
     // Input data mahasiswa
@@ -17,7 +17,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         cout << "Mahasiswa ke-" << i+1 << endl;
         cout << "Nama : ";
-        getline(cin >> ws, mhs[i].nama); // ws untuk mengabaikan spasi/enter
+        getline(cin >> ws, mhs[i].nama); 
         cout << "NIM  : ";
         cin >> mhs[i].nim;
         cout << "IPK  : ";
@@ -25,7 +25,7 @@ int main() {
         cout << endl;
     }
 
-    // Urutkan berdasarkan IPK (ascending) pakai bubble sort sederhana
+    // Urutkan berdasarkan IPK (ascending) 
     for (int i = 0; i < N-1; i++) {
         for (int j = 0; j < N-i-1; j++) {
             if (mhs[j].ipk > mhs[j+1].ipk) {

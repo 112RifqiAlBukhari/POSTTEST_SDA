@@ -32,7 +32,6 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         if (i % 2 == 0) { 
-            // index genap -> bilangan prima
             while (!isPrima(prima)) prima++;
             arr[i] = prima;
             prima++;

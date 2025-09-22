@@ -26,7 +26,7 @@ int main() {
     // Hitung jumlah elemen baris genap (baris ke-0 dan ke-2)
     int jumlah = 0;
     for (int i = 0; i < N; i++) {
-        if (i % 2 == 0) { // baris genap
+        if (i % 2 == 0) {
             for (int j = 0; j < N; j++) {
                 jumlah += matriks[i][j];
             }
